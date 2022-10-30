@@ -1,0 +1,73 @@
+2022-10-29 14:21:34,520 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-10-29 14:21:34,526 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting WalletApplication using Java 17.0.2 on LAPTOP-ORDGOMTQ with PID 29680 (D:\leovegas\wallet\target\classes started by janak in D:\leovegas\wallet)
+2022-10-29 14:21:34,531 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-10-29 14:21:34,617 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-29 14:21:34,619 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-29 14:21:35,970 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-29 14:21:35,993 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2022-10-29 14:21:36,424 INFO com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [restartedMain] Post-processing PropertySource instances
+2022-10-29 14:21:36,426 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2022-10-29 14:21:36,428 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2022-10-29 14:21:36,428 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2022-10-29 14:21:36,429 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-10-29 14:21:36,429 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-10-29 14:21:36,430 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-10-29 14:21:36,433 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-10-29 14:21:36,434 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-10-29 14:21:36,437 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-10-29 14:21:36,986 INFO com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [restartedMain] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-10-29 14:21:37,018 INFO com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [restartedMain] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-10-29 14:21:37,021 INFO com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [restartedMain] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-10-29 14:21:37,764 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8091 (http)
+2022-10-29 14:21:37,806 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8091"]
+2022-10-29 14:21:37,808 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-10-29 14:21:37,814 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 14:21:38,250 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-10-29 14:21:38,251 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3624 ms
+2022-10-29 14:21:38,394 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-10-29 14:21:38,899 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-10-29 14:21:38,923 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/test2'
+2022-10-29 14:21:40,075 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [restartedMain] Flyway Community Edition 8.5.13 by Redgate
+2022-10-29 14:21:40,075 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [restartedMain] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-10-29 14:21:40,075 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [restartedMain] 
+2022-10-29 14:21:40,093 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [restartedMain] Database: jdbc:h2:file:~/test2 (H2 2.1)
+2022-10-29 14:21:40,154 WARN org.flywaydb.core.internal.logging.slf4j.Slf4jLog [restartedMain] Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-10-29 14:21:40,192 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [restartedMain] Successfully validated 1 migration (execution time 00:00.024s)
+2022-10-29 14:21:40,201 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [restartedMain] Current version of schema "PUBLIC": 1
+2022-10-29 14:21:40,203 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [restartedMain] Schema "PUBLIC" is up to date. No migration necessary.
+2022-10-29 14:21:40,444 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-29 14:21:40,566 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-10-29 14:21:40,927 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-29 14:21:41,069 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-29 14:21:41,817 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-29 14:21:41,826 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-29 14:21:41,989 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: bace4f3d-9339-4fd3-90a9-76fef17f1b7d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-29 14:21:42,304 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a8fe790, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d68ea70, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a0357a4, org.springframework.security.web.header.HeaderWriterFilter@4b38d237, org.springframework.security.web.authentication.logout.LogoutFilter@5b9464a5, com.leo.vegas.test.wallet.security.AuthTokenFilter@4c3cb30c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15c7c379, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2597f293, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43e8376d, org.springframework.security.web.session.SessionManagementFilter@72cd3ac0, org.springframework.security.web.access.ExceptionTranslationFilter@7eb6c5d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c6f2e21]
+2022-10-29 14:21:42,690 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-29 14:21:44,725 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-10-29 14:21:44,763 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8091"]
+2022-10-29 14:21:44,837 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8091 (http) with context path '/wallet'
+2022-10-29 14:21:44,841 INFO com.ulisesbocchio.jasyptspringboot.caching.RefreshScopeRefreshedEventListener [restartedMain] Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2022-10-29 14:21:44,842 INFO com.ulisesbocchio.jasyptspringboot.caching.CachingDelegateEncryptablePropertySource [restartedMain] Property Source systemProperties refreshed
+2022-10-29 14:21:44,843 INFO com.ulisesbocchio.jasyptspringboot.caching.CachingDelegateEncryptablePropertySource [restartedMain] Property Source systemEnvironment refreshed
+2022-10-29 14:21:44,843 INFO com.ulisesbocchio.jasyptspringboot.caching.CachingDelegateEncryptablePropertySource [restartedMain] Property Source random refreshed
+2022-10-29 14:21:44,843 INFO com.ulisesbocchio.jasyptspringboot.caching.CachingDelegateEncryptablePropertySource [restartedMain] Property Source Config resource 'class path resource [application-dev.properties]' via location 'optional:classpath:/' refreshed
+2022-10-29 14:21:44,843 INFO com.ulisesbocchio.jasyptspringboot.caching.CachingDelegateEncryptablePropertySource [restartedMain] Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+2022-10-29 14:21:44,843 INFO com.ulisesbocchio.jasyptspringboot.caching.CachingDelegateEncryptablePropertySource [restartedMain] Property Source devtools refreshed
+2022-10-29 14:21:44,844 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-10-29 14:21:44,844 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2022-10-29 14:21:44,844 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2022-10-29 14:21:44,845 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2022-10-29 14:21:44,869 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started WalletApplication in 10.992 seconds (JVM running for 12.008)
+2022-10-29 14:21:51,873 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8091-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-29 14:21:51,873 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8091-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-10-29 14:21:51,876 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8091-exec-2] Completed initialization in 3 ms
+2022-10-29 14:21:52,197 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8091-exec-2] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.leo.vegas.test.wallet.dto.PlayerAccountDto> com.leo.vegas.test.wallet.controller.TransactionController.debitAccount(com.leo.vegas.test.wallet.dto.TransactionDto): [Field error in object 'transactionDto' on field 'amount': rejected value [0]; codes [Positive.transactionDto.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDto.amount,amount]; arguments []; default message [amount]]; default message [must be greater than 0]] ]
+2022-10-29 14:22:01,580 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-29 14:22:01,584 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-10-29 14:22:01,591 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

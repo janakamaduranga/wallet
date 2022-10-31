@@ -51,9 +51,9 @@ public class  TransactionController {
                 HttpStatus.CREATED);
     }
 
-    @Operation(summary = "Add a new debit transaction", tags = { "transactionDto" })
+    @Operation(summary = "Add a new credit transaction", tags = { "transactionDto" })
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "successfully debited",
+            @ApiResponse(responseCode = "201", description = "successfully credited",
                     content = @Content(schema = @Schema(implementation = PlayerAccountDto.class))),
             @ApiResponse(responseCode = "400", description = "Bad Request"),
             @ApiResponse(responseCode = "401", description = "Unauthorized"),

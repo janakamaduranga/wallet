@@ -20,7 +20,7 @@ public class PlayerAccount extends BaseEntity{
     @Column(name = "account_id")
     private String accountId;
 
-    /**should be ZonedDateTime, but H2 does not support it,
+    /*should be ZonedDateTime, but H2 does not support it,
      * in production environment, both timestamp or time zone
      * can be saved if the db does not support
      *

@@ -10,7 +10,8 @@ public enum ErrorCodes {
     BALANCE_OR_TRANSACTION_AMOUNT_CAN_NOT_BE_NULL(303,
             "Balance or transaction amount can not be null"),
     INSUFFICIENT_BALANCE(304, "Insufficient balance"),
-    INVALID_TX_TYPE(305, "Invalid transaction type");
+    INVALID_TX_TYPE(305, "Invalid transaction type"),
+    ACCOUNT_ALREADY_EXIST(306, "Account already exist");
 
     private final int id;
     private final String description;

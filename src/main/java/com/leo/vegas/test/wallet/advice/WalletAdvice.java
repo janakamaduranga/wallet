@@ -2,6 +2,7 @@ package com.leo.vegas.test.wallet.advice;
 
 import com.leo.vegas.test.wallet.exception.ErrorCodes;
 import com.leo.vegas.test.wallet.exception.TransactionException;
+import com.leo.vegas.test.wallet.exception.UserException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -49,9 +50,16 @@ public class WalletAdvice {
 
     @ExceptionHandler(TransactionException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ResponseEntity<Object> handleHealthException(TransactionException ex) {
+    public ResponseEntity<Object> handleTransactionException(TransactionException ex) {
         log.error(ERROR, ex);
         return new ResponseEntity<>(ex.getErrorDetails(), getStatusCode(ex.getErrorCode()));
+    }
+
+    @ExceptionHandler(UserException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ResponseEntity<Object> handleUserException(UserException ex) {
+        log.error(ERROR, ex);
+        return new ResponseEntity<>(ex.getErrorDetails(), getStatusCodeForUserException(ex.getErrorCode()));
     }
 
     @ExceptionHandler(Exception.class)
@@ -69,7 +77,18 @@ public class WalletAdvice {
             return HttpStatus.BAD_REQUEST;
         } else if (errorCode == ErrorCodes.CONCURRENT_MODIFICATION.getId() ||
                 errorCode == ErrorCodes.BALANCE_OR_TRANSACTION_AMOUNT_CAN_NOT_BE_NULL.getId() ||
-                errorCode == ErrorCodes.INSUFFICIENT_BALANCE.getId()
+                errorCode == ErrorCodes.INSUFFICIENT_BALANCE.getId() ||
+                errorCode == ErrorCodes.ACCOUNT_ALREADY_EXIST.getId()
+        ) {
+            return HttpStatus.CONFLICT;
+        }
+        return HttpStatus.INTERNAL_SERVER_ERROR;
+    }
+
+    private HttpStatus getStatusCodeForUserException(int errorCode) {
+        if (errorCode == ErrorCodes.PLAYER_ACCOUNT_NOT_FOUND.getId()) {
+            return HttpStatus.NO_CONTENT;
+        } else if (errorCode == ErrorCodes.ACCOUNT_ALREADY_EXIST.getId()
         ) {
             return HttpStatus.CONFLICT;
         }

@@ -45,7 +45,7 @@ public class PlayerAccountController {
             @ApiResponse(responseCode = "401", description = "Unauthorized"),
             @ApiResponse(responseCode = "204", description = "Not found"),
             @ApiResponse(responseCode = "500", description = "Internal error") })
-    @GetMapping(path = "/accounts/{accountId}", consumes = { "application/json"})
+    @GetMapping(path = "/accounts/{accountId}")
     public ResponseEntity<PlayerAccountDto> getAccountById(@PathVariable(name = "accountId") String accountId) {
         return new ResponseEntity<>(accountService.getAccount(accountId), HttpStatus.OK);
     }

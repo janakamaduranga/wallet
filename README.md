@@ -46,3 +46,18 @@ Note: in swagger UI, make sure you click "lock" icon and pass dummy jwt token(an
    'http://localhost:8091/wallet/v1/accounts/user123/transactions?page=0&size=10&sort=id' \
    -H 'accept: */*' \
    -H 'Authorization: Bearer cxvdf33'
+4) Create user account
+   curl -X 'POST' \
+   'http://localhost:8091/wallet/v1/accounts' \
+   -H 'accept: */*' \
+   -H 'Authorization: Bearer tt' \
+   -H 'Content-Type: application/json' \
+   -d '{
+   "accountId": "test999",
+   "balance": 2345.00
+   }'
+5) Get by account Id
+   curl -X 'GET' \
+   'http://localhost:8091/wallet/v1/accounts/test999' \
+   -H 'accept: */*' \
+   -H 'Authorization: Bearer tt'
